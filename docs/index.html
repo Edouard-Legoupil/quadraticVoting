@@ -66,7 +66,7 @@
 <li><p><a href="https://en.wikipedia.org/wiki/Tyranny_of_the_majority" class="external-link">Tyranny of the majority</a> in which a league of individuals may pursues exclusively its own objectives at the expense of those of other minorities in the group.</p></li>
 </ul>
 <p>As showcased below, quadratic voting is therefore more effective at both enabling optimal consensus and limiting opinions polarization than likert voting.</p>
-<p><img src="inst/image/example.jpg"></p>
+<p><img src="reference/figures/example.jpg"></p>
 <div class="section level2">
 <h2 id="how-quadratic-voting-works">How quadratic voting works?<a class="anchor" aria-label="anchor" href="#how-quadratic-voting-works"></a>
 </h2>
@@ -78,8 +78,8 @@
 </ul>
 <p>The number of opinion credits is linked to the number of position to vote for. The current form has the limitation of a maximum a 25 positions to vote for (so a maximum of 250 credits) organised in 5 groups with 5 positions per group max</p>
 <p><em>Example:</em> one (<em>very opinionated!</em>) participant could decide to allocate all their opinion credits to only 2 topics among (let’s say) the 25 that are offered: i.e. voting strongly 15 times (which will cost 225 credits) for one position and 5 times (which will cost 25 credits) for another one and leaving all others to 0. That way they spent all the 250 credits in two topics: 225 + 25 = 250. Keep in mind though that the results of the vote are not anonymous and will be shared with all participants on day 1.</p>
-<p><img src="inst/image/voting.png"></p>
-<p>The order in which the activities to vote for are presented is randomized for each participant to avoid specific ranking/selection effects in the online form. After the vote, the results are compiled with an R notebook and can be then turned into weighting measurement for each activity, which can provide objective and record-able evidences of views to inform either what statistical evidence building should be built or how the budget should be allocated between all activities in an operation.</p>
+<p><img src="reference/figures/voting.png"></p>
+<p>After the vote, the compilation of results can be then turned into weighting measurement for each activity. This provides objective evidences of views to inform the prioritization of activities (in terms of time/resources…) according to their precise importance.</p>
 </div>
 </div>
 <div class="section level1">
@@ -90,14 +90,17 @@
 <blockquote>
 <p>“Programme decisions are informed by documented consultations with persons of concern”.</p>
 </blockquote>
-<p><img src="inst/image/PB-Process-Cycle-Diagrmo.png"></p>
+<p><img src="reference/figures/PB-Process-Cycle-Diagrmo.png"></p>
 <p>In such case, in addition to a multi-functional team (MFT) members, the same voting questionnaire would be filled by representatives and/or randomly selected members of Forcibly Displaced Population. Results from each voting assembly can be then compared to re-enforce their authoritativeness, or at least representativeness.</p>
 <div class="section level2">
 <h2 id="what-is-included-in-this-package">What is included in this package<a class="anchor" aria-label="anchor" href="#what-is-included-in-this-package"></a>
 </h2>
-<p>In order to popularise this approach in the field, this package includes :</p>
+<p>In order to popularize this approach in the field, this package includes :</p>
 <ul>
-<li><p>a <strong>template to implement a quadratic survey</strong> in xlsform. This means that such consultation can be easily implemented for instance on UNHCR Kobotoolbox server: <a href="http://kobo.unhcr.org" class="external-link uri">http://kobo.unhcr.org</a>. The package include functions to check your form is correctly prepared and to directly set up the project on Kobotoolbox through the API.</p></li>
+<li>a <strong>template to implement a quadratic survey</strong> in xlsform. This means that such consultation can be easily implemented for instance on UNHCR Kobotoolbox server: <a href="http://kobo.unhcr.org" class="external-link uri">http://kobo.unhcr.org</a>. The order in which the activities to vote for are presented in the template is randomized for each participant to avoid specific ranking/selection effects in the online form. The package include functions to check your form is correctly prepared and to directly set up the project on Kobotoolbox through the API.</li>
+</ul>
+<p><img src="reference/figures/survey.png"></p>
+<ul>
 <li><p>some <strong>visualisations to display the results</strong> of quadratic survey consultation. see in the vignette example, how quadratic voting has been used to decide on the content of an information management retreat for UNHCR in the Americas.</p></li>
 <li><p>a <strong>tutorial</strong> explaining re-use the template and the notebook</p></li>
 </ul>

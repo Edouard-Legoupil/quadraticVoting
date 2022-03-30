@@ -38,7 +38,7 @@ As showcased below, quadratic voting is therefore more effective at both
 enabling optimal consensus and limiting opinions polarization than
 likert voting.
 
-![](inst/image/example.jpg)
+![](man/figures/example.jpg)
 
 ## How quadratic voting works?
 
@@ -78,16 +78,12 @@ for another one and leaving all others to 0. That way they spent all the
 results of the vote are not anonymous and will be shared with all
 participants on day 1.
 
-![](inst/image/voting.png)
+![](man/figures/voting.png)
 
-The order in which the activities to vote for are presented is
-randomized for each participant to avoid specific ranking/selection
-effects in the online form. After the vote, the results are compiled
-with an R notebook and can be then turned into weighting measurement for
-each activity, which can provide objective and record-able evidences of
-views to inform either what statistical evidence building should be
-built or how the budget should be allocated between all activities in an
-operation.
+After the vote, the compilation of results can be then turned into
+weighting measurement for each activity. This provides objective
+evidences of views to inform the prioritization of activities (in terms
+of time/resources…) according to their precise importance.
 
 # Deliberate & Vote! Mainstreaming participatory approach…
 
@@ -111,7 +107,7 @@ guidance](https://www.unhcr.org/handbooks/aap/documents/UNHCR-AAP_Operational_Gu
 > “Programme decisions are informed by documented consultations with
 > persons of concern”.
 
-![](inst/image/PB-Process-Cycle-Diagrmo.png)
+![](man/figures/PB-Process-Cycle-Diagrmo.png)
 
 In such case, in addition to a multi-functional team (MFT) members, the
 same voting questionnaire would be filled by representatives and/or
@@ -121,14 +117,19 @@ authoritativeness, or at least representativeness.
 
 ## What is included in this package
 
-In order to popularise this approach in the field, this package includes
+In order to popularize this approach in the field, this package includes
 :
 
 -   a **template to implement a quadratic survey** in xlsform. This
     means that such consultation can be easily implemented for instance
-    on UNHCR Kobotoolbox server: <http://kobo.unhcr.org>. The package
-    include functions to check your form is correctly prepared and to
-    directly set up the project on Kobotoolbox through the API.
+    on UNHCR Kobotoolbox server: <http://kobo.unhcr.org>. The order in
+    which the activities to vote for are presented in the template is
+    randomized for each participant to avoid specific ranking/selection
+    effects in the online form. The package include functions to check
+    your form is correctly prepared and to directly set up the project
+    on Kobotoolbox through the API.
+
+![](man/figures/survey.png)
 
 -   some **visualisations to display the results** of quadratic survey
     consultation. see in the vignette example, how quadratic voting has
