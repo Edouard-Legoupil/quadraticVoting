@@ -22,7 +22,7 @@ fusen::fill_description(
       person("Edouard", "Legoupil", email = "legoupil@unhcr.org", role = c("aut", "cre")
     )
   )
-))
+), overwrite = TRUE)
 # Define License with use_*_license()
 #usethis::use_mit_license("Edouard Legoupil")
 ```
@@ -39,11 +39,11 @@ usethis::git_vaccinate()
 
 ```{r, eval=FALSE}
 # README
-usethis::use_readme_rmd()
+#usethis::use_readme_rmd()
 # Code of Conduct
-usethis::use_code_of_conduct("contact@fake.com")
+#usethis::use_code_of_conduct("contact@fake.com")
 # NEWS
-usethis::use_news_md()
+#usethis::use_news_md()
 ```
 
 **From now, you will need to "inflate" your package at least once to be able to use the following commands. Let's go to your flat template, and come back here later if/when needed.**

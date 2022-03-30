@@ -7,29 +7,75 @@ output: github_document
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  fig.path = "inst/image/"
 )
 ```
 
-# quadraticVoting
+ 
+
+# Quadratic Voting: A practical facilitation method for prioritization process 
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of quadraticVoting is to ...
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+Performing prioritization in collective and inclusive way is challenging. This stage is typically the moment where diverging views can arise. In the absence of a clear facilitation approach, adverse effects are likely to occur, leading to decision that might : 
 
-```{r cars}
-summary(cars)
-```
+ * Simply replicate previous '_status quo_' from one year to another and just adjusted on the margin years after years. 
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
+ * Reflect the internal game power within a team, rather than the reality of the needs or the aggregated preference of all individuals. 
 
-You can also embed plots, for example:
+Quadratic voting is a cross between a voting budget system and a one-person-one-vote system. It is an innovative collective decision-making procedure where individuals allocate votes to express the degree of their preferences, rather than just the direction of their preferences. The procedure is designed to address inherent challenges associated with approaches based on either the "one-person-one-vote" or “one-dollar-one-vote” method, i.e.:  
 
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
+ *  [Voting paradox](https://en.wikipedia.org/wiki/Paradox_of_voting) when majority wishes enter in conflict with each other. 
 
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub.
+ *  [Tyranny of the majority](https://en.wikipedia.org/wiki/Tyranny_of_the_majority) in which a league of individuals may pursues exclusively its own objectives at the expense of those of other minorities in the group. 
+
+As showcased below, quadratic voting is therefore more effective at both enabling optimal consensus and limiting opinions polarization than likert voting. 
+
+![](inst/image/example.jpg)
+
+
+## How quadratic voting works? 
+
+Members of the team simply need to fill a ([xlsform-based](http://xlsform.org)) questionnaire listing all selected activities: 
+
+ * Each respondent has a number of "__opinion credits__" to use to vote either "for" (use a positive number) or "against" (use a negative number) each of the topics presented below. You can also express that you have "no opinion" by leaving it to "0".   
+
+ * Respondent can __vote either "for" or "against" a topic more than once__. However, the cost of additional vote for the same topic in terms of "opinion credits" will exponentially increase (check the _Cost_ column): the stronger one want to express his/her opinion on one specific point the less he/she will be able to express it on others. This element reflects the trade-off particpants are ready to consent for.  
+
+ * Respondents can submit the result of the consultation only once the total "opinion credits" is allocated. Respondents can always check their remaining "opinion credit balance" at the end of the questionnaire.  
+ 
+The number of opinion credits is linked to the number of position to vote for. The current form has the limitation of a maximum a 25 positions to vote for (so a maximum of 250 credits) organised in 5 groups with 5 positions per group max 
+
+_Example:_ one (_very opinionated!_) participant could decide to allocate all their opinion credits to only 2 topics among (let's say) the 25 that are offered: i.e. voting strongly 15 times (which will cost 225 credits) for one position and 5 times (which will cost 25 credits) for another one and leaving all others to 0. That way they spent all the 250 credits in two topics: 225 + 25 = 250. Keep in mind though that the results of the vote are not anonymous and will be shared with all participants on day 1.
+
+
+![](inst/image/voting.png)
+
+
+The order in which the activities to vote for are presented is randomized for each participant to avoid specific ranking/selection effects in the online form. After the vote, the results are compiled with an R notebook and can be then turned into weighting measurement for each activity, which can provide objective and record-able evidences of views to inform either what statistical evidence building should be built or how the budget should be allocated between all activities in an operation. 
+
+# Deliberate & vote: mainstreaming participatory approach. 
+
+Many areas have been proposed for [quadratic voting](https://www.radicalxchange.org/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf#page=6), including not only allocating budgets but also corporate governance in the private sector, cost-benefit analyses for public goods, more accurate polling, and other democratic decisions. For instance, quadratic voting was conducted in an experiment by the Democratic caucus of the Colorado House of Representatives in April 2019. Lawmakers used it to decide on their legislative priorities for the coming two years, selecting among 107 possible bills. 
+
+Quadratic voting can be used to implement [participatory budgeting](https://www.participatorybudgeting.org/what-is-pb/), a process that allow an effective participation of persons in concerns in the definition of supporting activities, which is _de facto_ an effective way to enforce the [Accountability to Affected people (AAP) guidance](https://www.unhcr.org/handbooks/aap/documents/UNHCR-AAP_Operational_Guidance.pdf): 
+
+> "Programme decisions are informed by documented consultations with persons of concern". 
+
+![](inst/image/PB-Process-Cycle-Diagrmo.png)
+
+In such case, in addition to a multi-functional team (MFT) members, the same voting questionnaire would be filled by representatives and/or randomly selected members of Forcibly Displaced Population. Results from each voting assembly can be then compared to re-enforce their authoritativeness, or at least representativeness. 
+
+
+## What is included in this package
+
+In order to popularise this approach in the field, this package includes :  
+
+ * a __template to implement a quadratic survey__ in xlsform. This means that such consultation can be easily implemented for instance on UNHCR Kobotoolbox server: http://kobo.unhcr.org. The package include functions to check your form is correctly prepared and to directly set up the project on Kobotoolbox through the API.  
+
+ * some __visualisations to display the results__ of quadratic survey consultation. see  in the vignette example, how quadratic voting has been used to decide on the content of an information management retreat for UNHCR in the Americas.  
+
+ * a __tutorial__ explaining re-use the template and the notebook  
