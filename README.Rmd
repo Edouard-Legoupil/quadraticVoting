@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 
 Performing prioritization in collective and inclusive way is challenging. This stage is typically the moment where diverging views can arise. In the absence of a clear facilitation approach, adverse effects are likely to occur, leading to decision that might : 
 
- * Simply replicate previous '_status quo_' from one year to another and just adjusted on the margin years after years. 
+ * Simply replicate previous '_status quo_' from one year to another that are just adjusted on the margin years after years. 
 
  * Reflect the internal game power within a team, rather than the reality of the needs or the aggregated preference of all individuals. 
 
@@ -57,7 +57,7 @@ _Example:_ one (_very opinionated!_) participant could decide to allocate all th
 
 The order in which the activities to vote for are presented is randomized for each participant to avoid specific ranking/selection effects in the online form. After the vote, the results are compiled with an R notebook and can be then turned into weighting measurement for each activity, which can provide objective and record-able evidences of views to inform either what statistical evidence building should be built or how the budget should be allocated between all activities in an operation. 
 
-# Deliberate & vote: mainstreaming participatory approach. 
+# Deliberate & Vote! Mainstreaming participatory approach... 
 
 Many areas have been proposed for [quadratic voting](https://www.radicalxchange.org/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf#page=6), including not only allocating budgets but also corporate governance in the private sector, cost-benefit analyses for public goods, more accurate polling, and other democratic decisions. For instance, quadratic voting was conducted in an experiment by the Democratic caucus of the Colorado House of Representatives in April 2019. Lawmakers used it to decide on their legislative priorities for the coming two years, selecting among 107 possible bills. 
 

@@ -12,7 +12,7 @@ can arise. In the absence of a clear facilitation approach, adverse
 effects are likely to occur, leading to decision that might :
 
 -   Simply replicate previous ‘*status quo*’ from one year to another
-    and just adjusted on the margin years after years.
+    that are just adjusted on the margin years after years.
 
 -   Reflect the internal game power within a team, rather than the
     reality of the needs or the aggregated preference of all
@@ -89,7 +89,7 @@ views to inform either what statistical evidence building should be
 built or how the budget should be allocated between all activities in an
 operation.
 
-# Deliberate & vote: mainstreaming participatory approach.
+# Deliberate & Vote! Mainstreaming participatory approach…
 
 Many areas have been proposed for [quadratic
 voting](https://www.radicalxchange.org/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf#page=6),

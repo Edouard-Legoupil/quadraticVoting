@@ -31,10 +31,25 @@ and `system.file()` to read it in your examples.
 ```{r development-2}
 # Run all this chunk in the console directly
 # Create "inst/" directory
-#dir.create(here::here("inst"))
+dir.create(here::here("inst"))
 
 # # Example dataset
-# 
+# # You will be able to read your example data file in each of your function examples and tests as follows
+positionsfile  <- system.file("positions.csv", package = "quadraticVoting")
+positions <- read.csv(positionsfile)
+positions 
+
+groupsfile  <- system.file("groups.csv", package = "quadraticVoting")
+groups <- read.csv(groupsfile)
+groups
+```
+
+```{r development-3}
+# Run all this chunk in the console directly
+# Create "inst/" directory
+dir.create(here::here("inst"))
+
+# # Example dataset
 # # You will be able to read your example data file in each of your function examples and tests as follows
 positionsfile  <- system.file("positions.csv", package = "quadraticVoting")
 positions <- read.csv(positionsfile)
