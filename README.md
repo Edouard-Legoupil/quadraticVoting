@@ -9,13 +9,13 @@
 Performing prioritization in collective and inclusive way is
 challenging. This stage is typically the moment where diverging views
 can arise. In the absence of a clear facilitation approach, adverse
-effects are likely to occur, leading to decision that might :
+effects are likely to occur, leading to decisions that might :
 
 -   Simply replicate previous ‘*status quo*’ from one year to another
     that are just adjusted on the margin years after years.
 
--   Reflect the internal game power within a team, rather than the
-    reality of the needs or the aggregated preference of all
+-   Reflect more the internal ‘*game power*’ within a team, rather than
+    the reality of the needs or the aggregated preference of all
     individuals.
 
 Quadratic voting is a cross between a voting budget system and a
