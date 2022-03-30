@@ -1,5 +1,5 @@
 ---
-title: "Quadratic Voting"
+title: "Quadratic Voting: How to?"
 output: html_document
 editor_options: 
   chunk_output_type: console
@@ -18,7 +18,9 @@ library(testthat)
 If it is the first time you use {fusen}, after 'description', you can directly run the last chunk of the present file with inflate() inside.
 --> 
 
-# Include some data examples in your package
+In this tutorial, we will cover how to prepare the form an then how to visualise the results.
+
+# Example Data: Include the positions and position groups to vote for
 
 <!-- 
  Store your dataset in a directory named "inst/" at the root of your project.
@@ -29,22 +31,22 @@ and `system.file()` to read it in your examples.
 ```{r development-2}
 # Run all this chunk in the console directly
 # Create "inst/" directory
-dir.create(here::here("inst"))
+#dir.create(here::here("inst"))
 
-# Example dataset
-file.copy(system.file("nyc_squirrels_sample.csv", package = "fusen"), here::here("inst"))
-# Make your dataset file available to the current Rmd
-pkgload::load_all(path = here::here(), export_all = FALSE)
+# # Example dataset
+# 
+# # You will be able to read your example data file in each of your function examples and tests as follows
+positionsfile  <- system.file("positions.csv", package = "quadraticVoting")
+positions <- read.csv(positionsfile)
+positions 
 
-# You will be able to read your example data file in each of your function examples and tests as follows
-datafile <- system.file("nyc_squirrels_sample.csv", package = "quadraticVoting")
-nyc_squirrels <- read.csv(datafile)
-
-nyc_squirrels
+groupsfile  <- system.file("groups.csv", package = "quadraticVoting")
+groups <- read.csv(groupsfile)
+groups
 ```
 
 
-# The first function of the package: Calculate the median of a vector
+# First step: Check that positions and groups match correctly
 
 <!--
 Create a chunk for the core of the function
@@ -115,7 +117,7 @@ test_that("my_median works properly and show error if needed", {
 })
 ```
 
-# Calculate the mean of a vector
+# Push the Form to the server
 
 <!--
 There can be other functions, examples and tests in your flat template.
@@ -178,12 +180,11 @@ fusen::inflate(flat_file = "dev/flat_full.Rmd", vignette_name = "Get started")
 ```
 
 
-# Inflate your package
+# Inflate package
 
-You're one inflate from paper to box.
-Build your package from this very Rmd using `fusen::inflate()`
+The package is built from this very Rmd using `fusen::inflate()` whenever
 
-- Verify your `"DESCRIPTION"` file has been updated
-- Verify your function is in `"R/"` directory
-- Verify your test is in `"tests/testthat/"` directory
-- Verify this Rmd appears in `"vignettes/"` directory
+- `"DESCRIPTION"` file has been updated
+- there are new functions in `"R/"` directory
+- There are new tests in `"tests/testthat/"` directory
+- There are new Rmd `"vignettes/"` directory

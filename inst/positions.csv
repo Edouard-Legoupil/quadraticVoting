@@ -1,0 +1,26 @@
+topic,key,name,position,argument
+Thematic,Thematic_1,Prog,What Data & Information support for Programme Monitoring?,For instance Calculate SDG Indicators from RMS
+Thematic,Thematic_2,Rep,What Data & Information support for Reporting and PI? ,"Storytelling, microsite, etc.."
+Thematic,Thematic_3,Coord,What Data & Information support for Interagency Coordination? ,"Role of UNHCR in interagency coordination, navigating the coordination landscape in the region"
+Thematic,Thematic_4,Reg,What Data & Information support for Registration?,Registration Data for Situation and protection Analysis
+Thematic,Thematic_5,Prot,What Data & Information support for Protection?,Looking at the new Protection Monitoring Report Template
+Troubleshooting,Troubleshooting_1,Rstat,R & Reproducible Analysis,
+Troubleshooting,Troubleshooting_2,ArcGIS,ArcGIS & Mapping,
+Troubleshooting,Troubleshooting_3,ActivityInfo,ActivityInfo & Response Tracking,
+Troubleshooting,Troubleshooting_4,PowerBI,PowerBI & Business Inteligence,
+Troubleshooting,Troubleshooting_5,Illustrator,Illustrator & infographics,
+Analysis,Analysis_1,Index,Severity Index and Composite Indicators for Area Identification,
+Analysis,Analysis_2,Score,Targeting Scorecard validation & Household Vulnerability ,
+Analysis,Analysis_3,Second,Secondary data & Social Media analysis,
+Analysis,Analysis_4,SitAn,Situation Analysis and Protection Monitoring,
+Analysis,Analysis_5,TextMin,Text Mining on Focus Group Discussions Records,
+Statistics,Statistics_1,Projection,How to build Population Projection Figures?,Getting numbers that can be justified
+Statistics,Statistics_2,Scrapping,"How to automatize Data extraction, Web  & PDF scrapping",Minimise repetitive and manual copy-paste
+Statistics,Statistics_3,IDP,"How to count for Official Figures? IDPs, Host Community, other of Concerns...",Adressing statistical reporting challenges
+Statistics,Statistics_4,SurveyIntegrat,"How to integrate different Household Surveys, including RMS, into an High Frequency Survey approach?",Integrated data collection activities
+Statistics,Statistics_5,Sample,How to get representative sample? How to assess the cost of a survey?,Organise plan in relation with caseload
+Support,Support_1,GDS,How to leverage Global Data Service?,"What support is available, what guidance needs to be implemented"
+Support,Support_2,NSO,How to engage with National Statistical Office?,How EGRISS Recommendations should influence the way you can engage with NSO?
+Support,Support_3,CCA,How to articulate Common Country Analysis/UNDCF & Humanitarian Needs Overivew?,Adressing the inclusion agenda! 
+Support,Support_4,Portal,Operational Data Portals / Communications Site / Dissemination,How to maintain the portal? What to include?
+Support,Support_5,RIDL,RIDL & Survey Data Lifecycle,How to get ready for the forthcoming Admin Instruction on RIDL usage?
